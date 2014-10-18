@@ -1,0 +1,11 @@
+#!/bin/bash
+
+echo "input what you want: "
+echo "1.add new blog."
+
+read op
+if op=1
+then
+    lib/blog/add_blog
+fi
+

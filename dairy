@@ -1,0 +1,15 @@
+#!/bin/bash
+
+echo "input what you want: "
+echo "1. add new dairy"
+echo "2. change today dairy"
+echo "3. change yestorday dairy"
+
+read op
+if op=1; then
+    $HOME/bin/lib/dairy/add_dairy
+elif op=2; then
+    $HOME/bin/lib/dairy/edit_dairy
+fi
+    
+

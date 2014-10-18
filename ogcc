@@ -1,0 +1,4 @@
+#!/bin/bash
+
+g++ -fopenmp $1 -o test
+./test

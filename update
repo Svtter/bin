@@ -1,0 +1,8 @@
+#!/bin/bash
+
+git add .
+echo "当前目录是:$(pwd)"
+echo "输入更新信息："
+read infor
+git commit -m "$infor"
+git push

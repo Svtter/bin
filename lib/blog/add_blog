@@ -1,0 +1,16 @@
+#!/bin/bash
+
+echo input the title:
+read title
+export article=$blog/"$title".md
+echo "Date: "$(date +%F) >> $article
+echo "Title: "$title >> $article
+echo "intro: " >> $article
+echo "Tags: " >> $article
+echo "Status: public" >> $article
+
+vim $article
+
+svn add $article
+cd $blog/
+svn ci -m "$title"
