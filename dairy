@@ -15,6 +15,8 @@ elif [ $op = 1 ]; then
 elif [ $op = 2 ]; then
     $bin/lib/dairy/edit_dairy
     echo "success."
+elif [ $op = 3]; then
+    cd $PLAN
 else
     echo "no command."
 fi
