@@ -4,12 +4,17 @@ echo "input what you want: "
 echo "1. add new dairy"
 echo "2. change today dairy"
 echo "3. change yestorday dairy"
+echo "0. edit cmd dairy"
 
 read op
-if op=1; then
-    $HOME/bin/lib/dairy/add_dairy
-elif op=2; then
-    $HOME/bin/lib/dairy/edit_dairy
+if [ $op = 0 ]; then
+    vim ~/bin/dairy
+elif [ $op = 1 ]; then
+    $bin/lib/dairy/add_dairy
+elif [ $op = 2 ]; then
+    $bin/lib/dairy/edit_dairy
+else
+    echo "no command."
 fi
     
 

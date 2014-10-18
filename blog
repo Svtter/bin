@@ -2,10 +2,19 @@
 
 echo "input what you want: "
 echo "1.add new blog."
+echo "2.backup blog."
+echo "0.edit cmd blog."
+
+export bin=$HOME/bin
 
 read op
-if op=1
-then
-    lib/blog/add_blog
+if [ $op = "0" ]; then
+    vim $bin/blog
+elif [ $op = "1" ]; then
+    $HOME/bin/lib/blog/add_blog
+elif [ $op = "2" ]; then
+    $HOME/bin/lib/blog/bk_blog
+else
+    echo "no command."
 fi
 

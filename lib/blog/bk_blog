@@ -1,0 +1,3 @@
+#!/bin/bash
+
+cp $blog/* $HOME/bin/bk/blog

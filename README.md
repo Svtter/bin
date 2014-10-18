@@ -6,8 +6,8 @@
 Lead
 ---
 
-- blog 博客
-- dairy 日记
+- [blog](blog) 博客
+- [dairy](dairy) 日记
 
 Intro
 ---
