@@ -1,6 +1,6 @@
 #!/bin/bash
 
-git add .
+git add -A
 echo "当前目录是:$(pwd)"
 echo "输入更新信息："
 read infor
