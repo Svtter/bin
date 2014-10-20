@@ -1,0 +1,4 @@
+#!/bin/bash
+
+
+w3m dict.cn/$0
