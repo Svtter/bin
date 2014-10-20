@@ -10,6 +10,7 @@ Lead
 
 - [blog](blog) 博客
 - [dairy](dairy) 日记
+- [dict](dict) 查词
 
 Intro
 ---
