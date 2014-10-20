@@ -20,5 +20,3 @@ elif [ $op = 3]; then
 else
     echo "no command."
 fi
-    
-

@@ -50,4 +50,4 @@ cp $PLAN/README.md.tmp $PLAN/README.md
 echo "|日期       |周次 |高数 |编程 |算法|英语|技术|锻炼 |刷牙 |早睡|备注|" >> $PLAN/README.md
 
 # cd 完成情况/
-./edit
+./edit_dairy
