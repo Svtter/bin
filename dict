@@ -1,4 +1,5 @@
 #!/bin/bash
+# 使用w3m进行搜索
 
-
-w3m dict.cn/$0
+echo find $1
+w3m dict.cn/$1

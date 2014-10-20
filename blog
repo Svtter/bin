@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# -a 添加新的blog
+# -l 显示所有的blog
+# -0 编辑本身
+
 echo "input what you want: "
 echo "1.add new blog."
 echo "2.backup blog."
