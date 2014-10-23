@@ -1,0 +1,4 @@
+#!/bin/bash
+
+g++ -O2 -o test $1 -lGL -lGLU -lglut
+./test
