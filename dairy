@@ -6,6 +6,9 @@ echo "2. change today dairy"
 echo "3. change yestorday dairy"
 echo "0. edit cmd dairy"
 
+
+# 处理命令
+
 read op
 if [ $op = 0 ]; then
     vim ~/bin/dairy
