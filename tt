@@ -1,0 +1,8 @@
+#!/bin/bash
+# 用于比较输入输出结果
+
+while true; do
+    ./$1 < input > output.a
+    diff output.a output
+    if [ $? -ne 0 ] ; then break; fi
+done
