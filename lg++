@@ -1,4 +1,4 @@
 #!/bin/bash
 
-g++ -O2 -o $2 $1 -lGL -lGLU -lglut
-./test
+g++ -fexec-charset=utf-8 -O2 -o $2 $1 -lGL -lGLU -lglut
+./$2

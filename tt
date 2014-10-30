@@ -1,5 +1,6 @@
 #!/bin/bash
 # 用于比较输入输出结果
+# 执行文件 与 当前目录下的output对比
 
 while true; do
     ./$1 < input > output.a
