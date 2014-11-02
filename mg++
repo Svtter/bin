@@ -1,0 +1,4 @@
+#!/bin/bash
+
+mpic++ $1 -O2 -o $2
+mpiexec -np 2 ./$2
