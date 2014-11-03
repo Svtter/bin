@@ -4,9 +4,9 @@
 # 重新运行此脚本可以重新编辑日记
 # 突然意识到bash不如python更加给力，于是打算有时间再重写一个python版本
 
-cd $PLAN
+cd $dairy
 cd 完成情况/
 vim $(date|awk '{print $1$2$3}').md
-cd $PLAN
+cd $dairy
 update
 

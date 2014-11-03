@@ -45,9 +45,9 @@ export md=完成情况/$(date|awk '{print $1$2$3}').md
 export week=$(date|awk '{print $4}')
 
 # 将生成情况导入README
-echo \|$date\|$week\|${item[0]}\|${item[1]}\|${item[2]}\|${item[3]}\|${item[4]}\|${item[5]}\|${item[6]}\|${item[7]}\|[完成情况]$infor\| >> $PLAN/README.md.tmp
-cp $PLAN/README.md.tmp $PLAN/README.md
-echo "|日期       |周次 |高数 |编程 |算法|英语|技术|锻炼 |刷牙 |早睡|备注|" >> $PLAN/README.md
+echo \|$date\|$week\|${item[0]}\|${item[1]}\|${item[2]}\|${item[3]}\|${item[4]}\|${item[5]}\|${item[6]}\|${item[7]}\|[完成情况]$infor\| >> $dairy/README.md.tmp
+cp $dairy/README.md.tmp $dairy/README.md
+echo "|日期       |周次 |高数 |编程 |算法|英语|技术|锻炼 |刷牙 |早睡|备注|" >> $dairy/README.md
 
 # cd 完成情况/
 $bin/lib/dairy/./edit_dairy
