@@ -3,6 +3,7 @@
 # 可以考虑添加一个python读取事项列表
 # 另外可以生成一个完成情况的代办事项
 # !!利用如此来写一个python的习惯文档吧！
+# 重新定义目录, 解决找不到固定目录的问题
 
 declare -a item
 name=("高数" "编程" "算法" "英语" "技术" "锻炼" "刷牙" "早睡")
@@ -39,13 +40,17 @@ echo 早睡完成情况:
 read item[7]
 echo 早睡完成情况为：${item[7]}
 
+echo 备注名
+read index
+echo 备注名为：$index
+
 export date=$(date +%F)
-export infor=\(完成情况/$(date|awk '{print $1$2$3}').md\)
+export infor=\($index/$(date|awk '{print $1$2$3}').md\)
 export md=完成情况/$(date|awk '{print $1$2$3}').md
 export week=$(date|awk '{print $4}')
 
 # 将生成情况导入README
-echo \|$date\|$week\|${item[0]}\|${item[1]}\|${item[2]}\|${item[3]}\|${item[4]}\|${item[5]}\|${item[6]}\|${item[7]}\|[完成情况]$infor\| >> $dairy/README.md.tmp
+echo \|$date\|$week\|${item[0]}\|${item[1]}\|${item[2]}\|${item[3]}\|${item[4]}\|${item[5]}\|${item[6]}\|${item[7]}\|[$index]$infor\| >> $dairy/README.md.tmp
 cp $dairy/README.md.tmp $dairy/README.md
 echo "|日期       |周次 |高数 |编程 |算法|英语|技术|锻炼 |刷牙 |早睡|备注|" >> $dairy/README.md
 

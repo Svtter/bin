@@ -13,10 +13,10 @@ read op
 if [ $op = 0 ]; then
     vim ~/bin/dairy
 elif [ $op = 1 ]; then
-    $bin/lib/dairy/add_dairy
+    $HOME/bin/lib/dairy/add_dairy
     echo "success."
 elif [ $op = 2 ]; then
-    $bin/lib/dairy/edit_dairy
+    $HOME/bin/lib/dairy/edit_dairy
     echo "success."
 elif [ $op = 3]; then
     cd $PLAN

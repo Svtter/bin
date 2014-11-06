@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cp $1 ${1}.swap
+mv ${1}.bk $1
+mv ${1}.swap ${1}.bk
