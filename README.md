@@ -11,7 +11,6 @@ Lead
 ---
 
 - [blog](blog) 博客
-- [dairy](dairy) 日记
 - [dict](dict) 查词
 - [`*g++`] 用于各类库编译简化输入
 
