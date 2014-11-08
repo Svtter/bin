@@ -1,5 +1,6 @@
 #!/bin/bash
 # 使用w3m进行搜索, 利用dict.cn的资源
+# 利用正则表达式进行匹配，但是还没学好。。
 
 echo find $1 ...
 w3m dict.cn/$1
