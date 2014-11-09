@@ -3,8 +3,8 @@
 
 content
 ---
-- [Task](#Task)
-- [Lead](#Lead)
+- [Task](#task)
+- [Lead](#lead)
 
 - 简化过于复杂的命令输入
 > 使用bash书写一个全命令行的便捷操作
