@@ -1,0 +1,19 @@
+#!/bin/python
+
+import sys
+import os
+
+blog_dir = '/home/svitter/svtter.github.io/source/_posts'
+
+if len(sys.argv) < 2:
+    print 'no option'
+else:
+    if sys.argv[1].startswith('-'):
+        os.chdir(blog_dir)
+        option = sys.argv[1][1:]
+        if option == 'n':
+            os.system("hexo n " + sys.argv[2])
+            os.system("gvim " + sys.argv[2] + ".md")
+        elif option == 'g':
+            os.system('hexo gm')
+            os.system('hexo d')
