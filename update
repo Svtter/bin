@@ -6,7 +6,7 @@ import os
 
 os.chdir(os.getcwd())
 os.system('git add -A')
-print "当前目录是:", os.getcwd
+print "当前目录是:", os.getcwd()
 infor = raw_input("输入更新信息：")
 os.system('git commit -m "' + infor + '"')
 os.system('git push')
