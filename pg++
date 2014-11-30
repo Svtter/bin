@@ -1,4 +1,0 @@
-#!/bin/bash
-
-g++ -pthread -O2 -o $2 $1 
-./$2

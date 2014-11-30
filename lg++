@@ -1,4 +1,0 @@
-#!/bin/bash
-
-g++ -fexec-charset=utf-8 -O2 -o $2 $1 -lGL -lGLU -lglut
-./$2
