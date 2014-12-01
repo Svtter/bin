@@ -1,0 +1,15 @@
+#!/bin/bash
+
+alias sl=ls
+
+# swap file
+function swap
+{
+    cp $1 ${1}.swap
+    mv ${1}.bk $1
+    mv ${1}.swap ${1}.bk
+}
+
+# add file jump
+
+# echo "[Plugin] add file ..."

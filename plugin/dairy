@@ -1,0 +1,6 @@
+#!/bin/bash
+
+export dairy=$HOME/My-Dairy
+export PATH=$dairy/bin:$PATH
+
+# echo "[Plugin] add dairy ..."

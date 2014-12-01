@@ -1,0 +1,10 @@
+#!/bin/bash
+
+
+export blog=$HOME/svtter.github.io
+export blog_content=$HOME/svtter.github.io/source/_posts
+export PATH=$blog/bin:$PATH
+
+alias upblog='blog -g'
+
+# echo "[Plugin] add blog ..."

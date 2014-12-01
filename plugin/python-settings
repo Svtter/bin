@@ -1,0 +1,7 @@
+#!/bin/bash
+# for python
+
+export PYTHONSTARTUP=$HOME/.python_startup_file
+alias py=python
+
+# echo "[Plugin] add python-settings ..."

@@ -1,0 +1,12 @@
+#!/bin/bash
+
+function update
+{
+    git add -A
+    printf "输入更新信息: "
+    read temp
+    git commit -m "$temp"
+    git push
+}
+
+# echo "[Plugin] add git ..."

@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# dict
+function dict 
+{
+    echo find $1 ...
+    w3m dict.cn/$1
+    echo done
+}
+
+# echo "[Plugin] add dict ..."

@@ -1,0 +1,14 @@
+#!/bin/bash
+
+
+# ACM cmp
+function tt
+{
+    while true; do
+        ./$1 < input > output.a
+        diff output.a output
+        if [ $? -ne 0 ] ; then break; fi
+    done
+}
+
+# echo "[Plugin] add ACM ..."

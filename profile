@@ -1,61 +1,35 @@
 #!/bin/bash
 
-# dict
-function dict 
-{
-    echo find $1 ...
-    w3m dict.cn/$1
-    echo done
-}
+# User specific aliases and functions
 
-# lg++
-function lg++ 
-{
-    g++ -fexec-charset=utf-8 -O2 -o $2 $1 -lGL -lGLU -lglut
-    ./$2
-}
+# echo $(pwd)
 
-# mg++
-function mg++
-{
-    g++ -fexec-charset=utf-8 -O2 -o $2 $1 -lGL -lGLU -lglut
-    ./$2
-}
+# add plugin
+. $profile/plugin/ACM               # ACM
+. $profile/plugin/blog              # blog
+. $profile/plugin/dairy             # dairy
+. $profile/plugin/dictionary        # dairy
+. $profile/plugin/file              # file
+. $profile/plugin/git               # file
+. $profile/plugin/python-settings   # python
+. $profile/plugin/special_g++       # special g++
+# . $profile/plugin/temp              # special g++
 
-# swap file
-function swap
-{
-    cp $1 ${1}.swap
-    mv ${1}.bk $1
-    mv ${1}.swap ${1}.bk
-}
-    
-# openmp
-function og++
-{
-    g++ -fopenmp -O2 -o $2 $1 
-    ./$2
-}
+export PATH=$HOME/software/bin:$PATH
 
-# pg++
-function pg++
-{
-    g++ -pthread -O2 -o $2 $1 
-    ./$2
-}
+# for goagent
+export PYTHON_EGG_CACHE=$HOME/.python-eggs-cache
 
+# markdown file
 function oppt
 {
     pandoc $1 -o $2 -t dzslides -s
     google-chrome $2
 }
 
-# ACM cmp
-function tt
+function refresh_profile
 {
-    while true; do
-        ./$1 < input > output.a
-        diff output.a output
-        if [ $? -ne 0 ] ; then break; fi
-    done
+    source $HOME/.bash_profile
 }
+
+echo "[Main] add profile ..."

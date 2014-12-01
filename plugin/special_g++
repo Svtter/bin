@@ -1,0 +1,32 @@
+#!/bin/bash
+
+
+# openmp
+function og++
+{
+    g++ -fopenmp -O2 -o $2 $1 
+    ./$2
+}
+
+# pg++
+function pg++
+{
+    g++ -pthread -O2 -o $2 $1 
+    ./$2
+}
+
+# lg++
+function lg++ 
+{
+    g++ -fexec-charset=utf-8 -O2 -o $2 $1 -lGL -lGLU -lglut
+    ./$2
+}
+
+# mg++
+function mg++
+{
+    g++ -fexec-charset=utf-8 -O2 -o $2 $1 -lGL -lGLU -lglut
+    ./$2
+}
+
+# echo "[Plugin] add *g++ ..."
