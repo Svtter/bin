@@ -5,15 +5,8 @@
 # echo $(pwd)
 
 # add plugin
-. $profile/plugin/ACM               # ACM
-. $profile/plugin/blog              # blog
-. $profile/plugin/dairy             # dairy
-. $profile/plugin/dictionary        # dairy
-. $profile/plugin/file              # file
-. $profile/plugin/git               # file
-. $profile/plugin/python-settings   # python
-. $profile/plugin/special_g++       # special g++
-# . $profile/plugin/temp              # special g++
+
+. $profile/Plugin
 
 export PATH=$HOME/software/bin:$PATH
 
@@ -27,9 +20,15 @@ function oppt
     google-chrome $2
 }
 
+function workers
+{
+    sudo systemctl start httpd.service
+    sudo systemctl start mysqld.service
+}
+
 function refresh_profile
 {
-    source $HOME/.bash_profile
+    source $HOME/.profile
 }
 
 echo "[Main] add profile ..."
