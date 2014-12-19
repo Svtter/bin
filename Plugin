@@ -12,3 +12,4 @@
 # . $profile/plugin/temp              # special g++
 # mark website
 . $profile/plugin/mark              
+. $profile/plugin/work

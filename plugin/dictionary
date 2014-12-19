@@ -1,11 +1,29 @@
 #!/bin/bash
 
 # dict
+# export webfinder=
+
 function dict 
 {
     echo find $1 ...
     w3m dict.cn/$1
     echo done
 }
+
+function handle
+{
+    content="$(curl http://dict.cn/$1)"
+    # echo $content
+    echo $content | grep strong
+}
+
+function twget
+{
+    # 需要进行处理
+    wget -dump dict.cn/$1
+}
+
+unset -f handle
+unset -f twget
 
 # echo "[Plugin] add dict ..."

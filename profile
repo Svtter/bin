@@ -13,18 +13,6 @@ export PATH=$HOME/software/bin:$PATH
 # for goagent
 export PYTHON_EGG_CACHE=$HOME/.python-eggs-cache
 
-# markdown file
-function oppt
-{
-    pandoc $1 -o $2 -t dzslides -s
-    google-chrome $2
-}
-
-function workers
-{
-    sudo systemctl start httpd.service
-    sudo systemctl start mysqld.service
-}
 
 function refresh_profile
 {

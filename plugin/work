@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# build a simple server
+function server
+{
+    python -m SimpleHTTPServer 80
+}
+
+
+function workers
+{
+    sudo systemctl start httpd.service
+    sudo systemctl start mysqld.service
+}

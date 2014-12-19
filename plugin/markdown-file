@@ -1,0 +1,11 @@
+#!/bin/bash
+
+
+
+# markdown file
+function oppt
+{
+    pandoc $1 -o $2 -t dzslides -s
+    google-chrome $2
+}
+
