@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# include python-bin
+
+
+
+export pluginPython=$profile/plugin-python/bin
+
+# startup
+# python $pluginPython/task
+
+# add to path
+export PATH=$pluginPython:$PATH
+
+unset pluginPython

@@ -7,8 +7,8 @@
 # add plugin
 
 . $profile/Plugin
-
-export PATH=$HOME/software/bin:$PATH
+. $profile/Plugin-python
+. $profile/startup
 
 # for goagent
 export PYTHON_EGG_CACHE=$HOME/.python-eggs-cache
@@ -19,4 +19,4 @@ function refresh_profile
     source $HOME/.profile
 }
 
-echo "[Main] add profile ..."
+# echo "[Main] add profile ..."

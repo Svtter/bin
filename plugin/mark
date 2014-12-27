@@ -5,3 +5,9 @@ function mark
 {
     echo "[$1]($2)" >> .mark
 }
+
+function outmark
+{
+    cat -n .mark
+}
+

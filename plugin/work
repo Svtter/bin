@@ -3,10 +3,10 @@
 # build a simple server
 function server
 {
-    python -m SimpleHTTPServer 80
+    python -m SimpleHTTPServer 8080
 }
 
-
+# start server
 function workers
 {
     sudo systemctl start httpd.service

@@ -1,15 +1,18 @@
 #!/bin/bash
 
 # plugin list
-. $profile/plugin/ACM               # ACM
-. $profile/plugin/blog              # blog
-. $profile/plugin/dairy             # dairy
-. $profile/plugin/dictionary        # dairy
-. $profile/plugin/file              # file
-. $profile/plugin/git               # file
-. $profile/plugin/python-settings   # python
-. $profile/plugin/special_g++       # special g++
+export plugin=$profile/plugin
+. $plugin/ACM               # ACM
+. $plugin/blog              # blog
+. $plugin/dairy             # dairy
+. $plugin/dictionary        # dairy
+. $plugin/file              # file
+. $plugin/git               # file
+. $plugin/python-settings   # python
+. $plugin/special_g++       # special g++
 # . $profile/plugin/temp              # special g++
 # mark website
-. $profile/plugin/mark              
-. $profile/plugin/work
+. $plugin/mark              
+. $plugin/work
+
+unset plugin

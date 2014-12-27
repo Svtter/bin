@@ -1,8 +1,7 @@
 #!/bin/bash
 
 
-
-# markdown file
+# markdown file to ppt
 function oppt
 {
     pandoc $1 -o $2 -t dzslides -s

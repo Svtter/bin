@@ -3,5 +3,6 @@
 
 export PYTHONSTARTUP=$HOME/.python_startup_file
 alias py=python
+# alias python='python -i'
 
 # echo "[Plugin] add python-settings ..."
