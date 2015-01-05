@@ -14,5 +14,6 @@ export plugin=$profile/plugin
 # mark website
 . $plugin/mark              
 . $plugin/work
+. $plugin/java
 
 unset plugin

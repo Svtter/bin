@@ -10,6 +10,8 @@ function swap
     mv ${1}.swap ${1}.bk
 }
 
+function backup { cp "$1"{,.bak};}
+
 # add file jump
 
 # echo "[Plugin] add file ..."
